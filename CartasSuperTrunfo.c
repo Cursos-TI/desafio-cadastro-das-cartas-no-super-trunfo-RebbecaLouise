@@ -4,9 +4,10 @@ int main() {
     
     char estado, codigo[4], cidade[30];
     int populacao, pturisticos;
-    float area, pib;
+    float area, pib, densidade, pibper;
 
-    
+
+    //Carta 1
     printf("Carta 1:\n");
 
     printf("Digite o Estado: ");
@@ -29,6 +30,9 @@ int main() {
 
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pturisticos);
+
+    densidade = (float) populacao / area;
+    pibper = (float) pib * 1000000000 / populacao;  // multiplicação por 1 bilhao para obter o numero absoluto em reais
  
     printf("\n");
     printf("Carta 1:\n");
@@ -39,10 +43,12 @@ int main() {
     printf("Área: %.2f km²\n", area);
     printf("PIB: %.2f bilhões de reais\n", pib);
     printf("Número de Pontos Turísticos: %d\n", pturisticos);
-
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade);
+    printf("PIB per Capita: %.2f reais\n", pibper);
 
     printf("\n");
 
+    //Carta 2
     printf("Carta 2:\n");
 
     printf("Digite o Estado: ");
@@ -66,6 +72,9 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pturisticos);
 
+    densidade = (float) populacao / area;
+    pibper = (float) pib * 100000000 / populacao;   // multiplicação por 1 bilhao para obter o numero absoluto em reais
+
     printf("\n");
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado);
@@ -75,6 +84,8 @@ int main() {
     printf("Área: %.2f km²\n", area);
     printf("PIB: %.2f bilhões de reais\n", pib);
     printf("Número de Pontos Turísticos: %d\n", pturisticos);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade);
+    printf("PIB per Capita: %.2f reais\n", pibper);
     
 
     return 0;
