@@ -32,7 +32,7 @@ int main() {
     scanf("%d", &pturisticos);
 
     densidade = (float) populacao / area;
-    pibper = (float) pib * 1000000000 / populacao;  // multiplicação por 1 bilhao para obter o numero absoluto em reais
+    pibper = (float) pib * 1000000000 / populacao;  // multiplicação por 1 bilhão para obter o número absoluto em reais
  
     printf("\n");
     printf("Carta 1:\n");
@@ -73,7 +73,7 @@ int main() {
     scanf("%d", &pturisticos);
 
     densidade = (float) populacao / area;
-    pibper = (float) pib * 100000000 / populacao;   // multiplicação por 1 bilhao para obter o numero absoluto em reais
+    pibper = (float) pib * 100000000 / populacao;   // multiplicação por 1 bilhão para obter o número absoluto em reais
 
     printf("\n");
     printf("Carta 2:\n");
